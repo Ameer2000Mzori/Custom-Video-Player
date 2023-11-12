@@ -18,4 +18,8 @@
   },
   "csstree/validator": true,
   "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css"]
+  "css": {
+    "selectorSeparatorNewLine": true,
+    "newline_between_rules": true
+}
 }
