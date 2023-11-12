@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom-Video-Player</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="header">
@@ -12,8 +19,53 @@
         <video
           class="video-header"
           src="https://assets.mixkit.co/videos/preview/mixkit-highway-in-the-middle-of-a-mountain-range-4633-large.mp4"
-          playsinline=""
+          playsinline
         ></video>
+
+        <div class="show-controls">
+          <div class="controls-container">
+            <div class="progress-range" title="seek">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="control-group">
+              <div class="controls-left">
+                <div class="play-controls">
+                  <i class="fa-solid fa-play" title="play" id="play-btn"></i>
+                </div>
+                <div class="valume-class">
+                  <div class="volume-icon">
+                    <i
+                      class="fa-solid fa-volume-high"
+                      title="Mute"
+                      id="valume-icon"
+                    ></i>
+                  </div>
+                  <div class="valume-range" title="change valume">
+                    <div class="volume-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="controls-right">
+                <div class="speed" title="playback rate">
+                  <select name="playbackrate" class="player-speed">
+                    <option value="0.5">0.5 x</option>
+                    <option value="0.75">0.75 x</option>
+                    <option value="1" selected>1 x</option>
+                    <option value="1.5">1.5 x</option>
+                    <option value="2">2 x</option>
+                  </select>
+                </div>
+                <div class="time">
+                  <span class="time-elapsed">00:00 / </span>
+                  <span class="time-elapsed">2:21</span>
+                </div>
+                <div class="full-screen">
+                  <i class="fa-solid fa-expand"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
